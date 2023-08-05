@@ -1,0 +1,272 @@
+@import url(https://db.onlinewebfonts.com/c/101982ea2fed2018e8dde2d51076dc44?family=Nadia+W00+Regular);
+@import url(https://db.onlinewebfonts.com/c/1cffecf1a40baf9c8f2d1a7ebf283ddf?family=FSP+DEMO+-+WT+Solaire+Display);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    font-family: "Montserrat", sans-serif;
+    color: #f6f4e6;
+}
+
+.nav {
+    position: fixed;
+    opacity: 0.8;
+    margin: 0%;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav .headnav {
+    font-size: 2rem;
+
+    margin-left: 2vw;
+}
+
+.nav-item {
+    margin: auto 10%;
+
+}
+
+.main {
+    padding: 10vh 0;
+}
+
+.im {
+    width: 98vw;
+    filter: blur(0.1rem);
+    opacity: 0.8;
+}
+
+.image1 {
+    height: 100vh;
+    filter: blur(0.15rem);
+}
+
+.centered {
+    position: absolute;
+    text-align: center;
+    top: 40vh;
+    left: 35vw;
+    font-family: "FSP DEMO - WT Solaire Display";
+
+}
+
+.centered h1 {
+    font-size: 5rem;
+
+}
+
+.centered h1:hover {
+    color: rgb(225, 225, 225);
+    transition: all 0.2s ease-in-out;
+}
+
+.container {
+    object-fit: contain;
+    margin: 0%;
+    padding: 1vh 0.3vw;
+    position: relative;
+}
+
+.programme {
+    height: 60vh;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.programme h1 {
+    font-family: 'Space Grotesk', Times, serif;
+    font-size: 3rem;
+}
+
+.apps {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tr {
+    top: 44vh;
+    left: 5vw;
+    width: 70%;
+}
+
+.pl {
+    font-size: 1.5rem;
+}
+
+.med {
+    left: 5vw;
+    width: 70%;
+}
+
+.foot {
+    margin-left: 25%;
+}
+
+
+
+.fp {
+    padding-top: 10%;
+    translate: -16vw;
+}
+
+hr {
+    width: 200px;
+    margin-left: 43%;
+    margin-bottom: 5%;
+}
+
+.cim {
+    width: 50vw;
+}
+
+
+
+
+.navbar-nav a:hover {
+    color: #fddb3a;
+}
+
+.navbar-nav .dot {
+    width: 6px;
+    height: 6px;
+    background: #fddb3a;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav a:nth-child(1):hover~.dot {
+    transform: translateX(-270px);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.navbar-nav a:nth-child(2):hover~.dot {
+    transform: translateX(-200px);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.navbar-nav a:nth-child(3):hover~.dot {
+    transform: translateX(-120px);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.navbar-nav a:nth-child(4):hover~.dot {
+    transform: translateX(-40px);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#container {
+    width: 10%;
+    align-self: center;
+    margin: 0 auto;
+    display: inline-block;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+
+.button a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 140px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+
+#button-1 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#button-1 a {
+    position: relative;
+    left: 0;
+    transition: all .35s ease-Out;
+}
+
+#pic {
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: -200px;
+    position: absolute;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .75s ease-Out;
+    bottom: 0;
+}
+
+#button-1 img {
+    width: 20px;
+    height: auto;
+}
+
+#button-1:hover #pic {
+    left: 0;
+}
+
+#button-1:hover a {
+    left: 130px;
+}
+
+@media only screen and (max-width: 800px) {
+    .im {
+        width: 100vw;
+        filter: blur(0.1rem);
+        opacity: 0.8;
+    }
+
+    .centered {
+        top: 40vh;
+        left: 20vw;
+    }
+
+    .centered h1 {
+        font-size: 2rem;
+
+    }
+
+    .im {
+        height: 100vh;
+    }
+
+    .pl {
+        font-size: 1rem;
+    }
+
+    hr {
+        margin-left: 20%;
+    }
+
+}
